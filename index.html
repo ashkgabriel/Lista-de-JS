@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ProjetoJS_1</title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/scripts.js" defer></script>
+</head>
+<body>
+    <h1>Exercícios JS </h1>
+    <nav id="menuSuperior">
+        <ul>
+            <li><a href="#exercicio1" onclick="foco('exercicio1')">Exercício 1</a></li>
+            <li><a href="#exercicio2" onclick="foco('exercicio2')">Exercício 2</a></li>
+            <li><a href="#exercicio3" onclick="foco('exercicio3')">Exercício 3</a></li>
+            <li><a href="#exercicio4" onclick="foco('exercicio4')">Exercício 4</a></li>
+            <li><a href="#exercicio5" onclick="foco('exercicio5')">Exercício 5</a></li>
+            <li><a href="#exercicio6" onclick="foco('exercicio6')">Exercício 6</a></li>
+            <li><a href="#exercicio7" onclick="foco('exercicio7')">Exercício 7</a></li>
+        </ul>    
+    </nav>
+    <div class="divExercicio" id="exercicio1" hidden>
+        <form>
+            <h2>Cálculo de aumento de salário</h2>
+            <label for="salario">Salário do funcionário: </label>
+            <input type="text" name="salario" id="salario" placeholder="Digite o salário">
+            <br>
+            <label for="porcentagemAumento">Porcentagem de aumento: </label>
+            <input type="text" name="porcentagemAumento" id="porcentagemAumento" placeholder="Digite a porcentagem de aumento salarial">
+            <br>
+            <input type="button" value="Calcular" class="botaoCal" onclick="exercicio1()">
+            <br>
+            <p id="nSalario">O novo salário do funcionário é de: R$</p>
+        </form>
+    </div>
+
+    <div class="divExercicio" id="exercicio2" hidden>
+        <h2>Cálculo da área do triângulo</h2>
+
+        <label for="base">Medida da base do triângulo:</label>
+        <input type="number" name="base" id="base" placeholder="Digite a medida em cm">
+
+        <br>
+
+        <label for="altura">Medida da altura do triângulo:</label>
+        <input type="number" name="altura" id="altura" placeholder="Digite a medida em cm">
+
+        <br>
+
+        <input type="button" value="Calcular" class="botaoCal" onclick="exercicio2()">
+
+        <br>
+
+        <input type="text" name="resultado2" id="resultado2" readonly placeholder="Área = ">
+    </div>
+
+    <div class="divExercicio" id="exercicio3" hidden>
+        <h2>Média ponderada</h2>
+        
+        <br>
+
+        <label for="nota1">Digite a primeira nota:</label>
+        <input type="number" name="nota1" id="nota1" placeholder="Corresponde a 30%">
+        
+        <br>
+
+        <label for="nota2">Digite a segunda nota:</label>
+        <input type="number" name="nota2" id="nota2" placeholder="Corresponde a 70%">
+        
+        <br>
+
+        <input type="button" value="Calcular" class="botaoCal" onclick="exercicio3()">
+        
+        <br>
+        
+        <label id="resultado3"></label>
+
+    </div>
+
+    <div class="divExercicio" id="exercicio4" hidden>
+        <h2>Cálculo de tempo de vida</h2>
+
+        <br>
+
+        <label for="dataNascimento">Digite o ano de nascimento:</label>
+        <input type="number" name="dataNascimento" id="dataNascimento">
+
+        <br> 
+
+        <input type="button" value="Calcular" class="botaoCal" onclick="exercicio4()">
+
+    </div>
+    <div class="divExercicio" id="exercicio5" hidden>
+        <h2>Consumo médio de combustível:</h2>
+        <label for="distancia">Informe a distância percorrida:</label>
+        <input type="number" name="distancia" id="distancia" placeholder="Informe a distância em Km">
+
+        <br>
+        
+        <label for="volume">Informe o volume de combustível utilizado:</label>
+        <input type="number" name="volume" id="volume" placeholder="Informe o volume em L">
+
+        <br>
+
+        <input type="button" value="Calcular" class="botaoCal" onclick="exercicio5()">
+        
+    </div>
+    <div class="divExercicio" id="exercicio6" hidden>
+        <h2>Empresa RAB</h2>
+
+        <label for="horasTrabalhadas">Digite a quantidade de horas trabalhadas:</label>
+        <input type="number" name="horasTrabalhadas" id="horasTrabalhadas"placeholder="Horas trabalhadas">
+
+        <br>
+
+        <label for="valorHora">Digite o valor pago por horas trabalhadas:</label>
+        <input type="number" name="valorHora" id="valorHora"placeholder="Valor em R$/hora">
+
+        <br>
+
+        <label for="qtdRefeicoes">Digite a quantidade de refeições feitas:</label>
+        <input type="number" name="qtdRefeicoes" id="qtdRefeicoes"placeholder="Quantidade de refeições">
+
+        <br>
+
+        <input type="button" value="Calcular" class="botaoCal" onclick="exercicio6()">
+
+        <br>
+
+        <p id="resposta6"></p>
+        
+    </div>
+    <div class="divExercicio" id="exercicio7" hidden>
+        <h2>Par ou ímpar</h2>
+
+        <input type="button" value="Gerar" class="botaoCal" onclick="exercicio7()">
+        <br>
+        <p id="nRand"></p>
+        <br>
+        <p id="parImpar"></p>
+    </div>
+
+</body>
+</html>
